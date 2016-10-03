@@ -2,7 +2,7 @@
 $DIRN = 'src';
 $pharPath = "PhQAgent.phar";
 $phar = new Phar($pharPath);
-$phar->setStub('<?php require_once("phar://". __FILE__ ."/PhQAgent.php");  __HALT_COMPILER();');
+$phar->setStub('<?php require_once("phar://". __FILE__ ."/phqagent/PhQAgent.php");  __HALT_COMPILER();');
 $phar->setSignatureAlgorithm(Phar::SHA1);
 $phar->startBuffering();
 $filePath=__DIR__ ."/$DIRN";
